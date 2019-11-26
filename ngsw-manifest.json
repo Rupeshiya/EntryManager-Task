@@ -1,0 +1,30 @@
+{
+  "external": {
+    "urls": [
+      {"url": "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"}
+    ]
+  },
+  "static.ignore": [
+    "\\.js\\.map$"
+  ],
+  "dynamic": {
+    "group": [
+      {
+        "name": "posts-images",
+        "cache": {
+          "optimizeFor": "performance",
+          "maxAgeMs": 60000,
+          "maxEntries": 40
+        }
+      }
+    ]
+  },
+  "routing": {
+    "index": "/index.html",
+    "routes": {
+      "/": {
+        "prefix": false
+      }
+    }
+  }
+}

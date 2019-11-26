@@ -1,0 +1,51 @@
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <h3 class="text text-center"
+      [ngClass]="{'checkIn': isCheckIn }">CHECK-OUT FORM
+    </h3>
+    <div *ngIf="isCheckedOut" class="text text-center text-success">Successfully checked out!!</div>
+    <ng-container class="text text-center" *ngIf="isCheckIn">
+    <h3 class="text text-center">CHECK-IN FORM</h3>
+    <form>
+      <div class="form-group">
+        <label for="Name">Name</label>
+        <input type="text" class="form-control"
+          placeholder="Enter Name" [(ngModel)]="nameOfVisitor" name="nameOfVisitorText">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter email" class="form-control" [(ngModel)]="emailOfVisitor" name="emailText">
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="number" class="form-control"
+          id="phone" placeholder="+91 9123492999" [(ngModel)]="phoneOfVisitor" name="phoneText">
+      </div>
+      <div class="form-group">
+        <label for="CheckInTime">CheckIn Time</label>
+          <input type="time" class="form-control" atp-time-picker value="20:55" [(ngModel)]="checkIn" (click)="onCheckInClick" name="checksIn">
+      </div>
+      <button type="submit"
+        class="btn btn-block btn-outline-success"
+        (click)="onCheckInSubmit()">Submit</button>
+    </form>
+    </ng-container>
+    <ng-container *ngIf="!isCheckIn">
+      <form>
+        <div class="form-group">
+        <label for="checkOut">Check Out</label>
+          <input type="time" atp-time-picker value="20:55"
+            [(ngModel)]="checksOut"
+            (click)="onCheckOutClick" name="checksOut"
+            class="form-control" />
+        </div>
+        <button type="submit"
+          class="btn btn-block btn-outline-success"
+          (click)="onCheckOutSubmit()">Submit</button>
+      </form>
+    </ng-container>
+    
+  </div>
+  <div class="col-md-3"></div>
+</div>
