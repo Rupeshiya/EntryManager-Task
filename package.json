@@ -4,11 +4,12 @@
   "scripts": {
     "ng": "ng",
     "serve": "ng serve",
-    "start": "node app.js",
-    "build": "ng build --prod && node app.js",
+    "start": "npm install && node app.js",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "app" : "ng build --prod && node app.js",
     "dev": "ng build --prod && nodemon app.js",
     "server": "node app.js",
     "eslint": "eslint ./server/**.js ./app.js --fix"

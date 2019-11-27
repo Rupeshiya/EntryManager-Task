@@ -1,4 +1,4 @@
-# Mean
+# EntryManager
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.2.
 
@@ -28,7 +28,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 # EntryManager
-A simple web app for managing Entry of visitors (live at )
+A simple web app for managing Entry of visitors 
 
 
 ## API 
@@ -79,6 +79,7 @@ A simple web app for managing Entry of visitors (live at )
   sendgridUsername = "<YOUR_SENDGRID_URL>"
   sendgridPassword = "<YOUR_SENDGRID_PASSWORD>"
   mailService = "SendGrid"
+  PORT = 4000
 ```
 2. Install dependencies
 ```sh
@@ -90,7 +91,7 @@ A simple web app for managing Entry of visitors (live at )
 ```
 4. To run the app (both client and server at a time)
 ```sh
-   npm run build
+   npm run app
 ```
 5. Open your browser and move to ```http://localhost:4000``` (You are good to go!)
 
