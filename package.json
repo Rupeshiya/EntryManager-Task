@@ -3,12 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build --prod && nodemon ./app.js && ng serve --prod",
+    "serve": "ng serve",
+    "start": "node app.js",
+    "build": "ng build --prod && node app.js",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "dev": "nodemon app.js",
+    "dev": "ng build --prod && nodemon app.js",
     "server": "node app.js",
     "eslint": "eslint ./server/**.js ./app.js --fix"
   },
@@ -76,5 +77,9 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.1.6"
+  },
+   "engines": {
+    "node": "11.11.0",
+    "npm": "6.7.0"
   }
 }
