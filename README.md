@@ -25,10 +25,10 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-# MeanAuth
-A simple web app for learning authentication using MEAN stack
+
+
 # EntryManager
-A simple web app for managing Entry of visitors
+A simple web app for managing Entry of visitors (live at )
 
 
 ## API 
@@ -72,7 +72,6 @@ A simple web app for managing Entry of visitors
 ```
 ## Usage 
 
-
 1. Add .env file in the root directory and add the following:
 ```sh
   mongoUri = '<YOUR_MONGODB_URL>'
@@ -95,6 +94,11 @@ A simple web app for managing Entry of visitors
 ```
 5. Open your browser and move to ```http://localhost:4000``` (You are good to go!)
 
+### Project Structure 
+```sh
+1. Backend files: /server
+2. Client Side: /src
+```
 ## Running application:
 
 ### 1. Home page 
@@ -116,7 +120,9 @@ A simple web app for managing Entry of visitors
 ![checkout](https://user-images.githubusercontent.com/31209617/69600883-47f9fd00-1038-11ea-86eb-76b3f1d45f05.png)
 
 ### 6. Email sent
-![image](https://user-images.githubusercontent.com/31209617/69601287-a7a4d800-1039-11ea-9861-d1e340948b40.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/31209617/69601287-a7a4d800-1039-11ea-9861-d1e340948b40.png" width=250 height=400>
+</p>
 
 
 ### Made with :heart: by Rupeshiya 
